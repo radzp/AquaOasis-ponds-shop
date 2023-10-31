@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aqua Oasis</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin="">
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+
+
+<!-- NAVBAR-->
+<nav class="navbar navbar-expand-lg bg-white sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/Logo_final.png" alt="logo">
+
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">                                 <!--ms-auto to po prawej stronie-->
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">O nas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Usługi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="team.html">Zespół</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="contact.html">Kontakt</a>
+                </li>
+            </ul>
+            <a href="cart.html" class="btn btn-brand ms-lg-3">Zamów teraz</a>
+        </div>
+    </div>
+</nav>
+
+<!--Contact-->
+<section class="section-padding bg-light pt-5" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
+                <div class="section-title">
+                    <h1 class="display-4 text-white fw-semibold">
+                        Bądźmy w kontakcie
+                    </h1>
+                    <div class="line bg-white"></div>
+                    <p class="text-white">
+                        Jesteśmy tutaj, aby odpowiedzieć na Twoje pytania, wysłuchać Twoich pomysłów i pomóc Ci
+                        zrealizować Twoje marzenia związane z oczkami wodnymi. Niezależnie od tego, czy masz pytania
+                        dotyczące naszych usług, potrzebujesz porady czy chcesz umówić się na spotkanie, jesteśmy
+                        dostępni dla Ciebie.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center" data-aos="fade-down" data-aos-delay="150">
+            <div class="col-lg-6">
+
+                <form action="mailto:wymyslonymail@domena.net" method="post"
+                      class="row g-3 p-lg-5 p-4 bg-white theme-shadow">
+                    <h1 class="fw-semibold justify-content-center d-flex">
+                        Skontaktuj się z nami
+                    </h1>
+
+                    <div class="form-group col-lg-6">
+                        <label for="firstName">Imię</label>
+                        <input type="text" id="firstName" class="form-control" name="firstName" placeholder="Podaj imię"
+                               pattern="^[a-zA-ZąćęłńóśżźĄĆĘŁŃÓŚŻŹ]{2,20}$" required>
+                    </div>
+                    <div class="form-group col-lg-6">
+                        <label for="lastName">Nazwisko</label>
+                        <input type="text" class="form-control" id="lastName" name="lastName"
+                               placeholder="Podaj nazwisko" pattern="^[a-zA-ZąćęłńóśżźĄĆĘŁŃÓŚŻŹ]{2,40}$" required>
+                    </div>
+                    <div class="form-group col-lg-12">
+                        <label for="email">E-mail</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Podaj e-mail"
+                               pattern="^(([\w_]+)-*\.?)+@[\w](([\w]+)-?_?\.?)+([a-z]{2,4})$" required>
+                    </div>
+                    <div class="form-group col-lg-12">
+                        <label for="phoneNumber">Nr. telefonu</label>
+                        <input type="text" class="form-control" id="phoneNumber" name="phoneNumber"
+                               pattern="^([1-9]{1,1}[0-9]{1,1}(-)?[1-9]{1,1}[0-9]{6,6})|([1-9]{1,1}[0-9]{8,8})$"
+                               placeholder="Podaj numer telefonu">
+                    </div>
+                    <div class="form-group col-lg-12">
+                        <label for="subject">Tytuł</label>
+                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Podaj tytuł"
+                               required>
+                    </div>
+                    <div class="form-group col-lg-12">
+                        <label for="message">Wiadomość</label>
+                        <textarea name="message" id="message" rows="4" class="form-control" style="resize: none"
+                                  placeholder="Wpisz wiadomość" required></textarea>
+                    </div>
+                    <div class="form-group col-lg-12 d-grid">
+                        <button type="submit" class="btn btn-brand">Wyślij wiadomość</button>
+                    </div>
+                </form>
+
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-down" data-aos-delay="250">
+                <div class="row g-3 p-lg-5 p-4 bg-white theme-shadow">
+                    <h1 class="fw-semibold justify-content-center d-flex">
+                        Znajdź nas!
+                    </h1>
+                    <p>
+                        Nadbystrzycka 38B, 20-618 Lublin
+                    </p>
+                    <div id="map" class="justify-content-center border border-success border-2 rounded"
+                         style="height: 462px; width: 550px;"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!--Footer-->
+<footer class="bg-dark">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row gy-5">
+                <div class="col-lg-3 col-sm-6">
+                    <a href="index.html">
+                        <img src="images/logo_AquaOasis.png" alt="">
+                    </a>
+                    <div class="line"></div>
+                    <p>Firma spełniająca twoje marzenia.</p>
+                </div>
+
+
+                <div class="col-lg-3 col-sm-6 ms-auto">
+                    <h5 class="mb-0 text-white">O NAS</h5>
+                    <div class="line"></div>
+                    <ul>
+                        <li><a href="about.html">Nasza firma</a></li>
+                        <li><a href="team.html">Nasi pracownicy</a></li>
+                        <li><a href="services.html">Nasze usługi</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 ms-auto">
+                    <h5 class="mb-0 text-white">KONTAKT</h5>
+                    <div class="line"></div>
+                    <ul>
+                        <li>Polska</li>
+                        <li>Nadbystrzycka 38B, 20-618 Lublin</li>
+                        <li>tel. (+48) 567 432 112</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row g-4 justify-content-between">
+                <div class="col-auto">
+                    <p class="mb-0">© 2023 Aqua Oasis. All Rights Reserved</p>
+                </div>
+                <div class="col-auto">
+                    <p class="mb-0">DESIGNED BY ANNA PACZEŚNA</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="js/main.js"></script>
+<script src="js/map.js"></script>
+
+
+</body>
+</html>
