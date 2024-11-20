@@ -4,37 +4,37 @@
       "nazwa": "Ala",
       "opinia": "\"Nie mogę wyrazić słowami, jak bardzo jestem zadowolona z oczka wodnego, które firma zbudowała w moim ogrodzie. To absolutnie magiczne miejsce, gdzie mogę się zrelaksować i odpocząć. Zespół był bardzo profesjonalny, kreatywny i uwzględnił wszystkie moje życzenia. Polecam ich usługi wszystkim!\"",
       "usluga": "Oczko wodne na poziomie ziemi",
-      "zdjecie": "/images/opinie/ala.jpg"
+      "zdjecie": "./images/opinie/ala.jpg"
     },
     {
       "nazwa": "Bartek",
       "opinia": "\"Nasze oczko wodne jest absolutnie oszałamiające! Firma naprawdę zrozumiała naszą wizję i przekształciła ją w piękne dzieło sztuki. Jesteśmy zachwyceni precyzją wykonania, dbałością o szczegóły i doskonałą obsługą klienta. To naprawdę uzupełnia nasze otoczenie i dodaje mu niepowtarzalnego uroku. Gorąco polecam!\"",
       "usluga": "Oczko wodne z kaskadą",
-      "zdjecie": "/images/opinie/bartek.jpg"
+      "zdjecie": "./images/opinie/bartek.jpg"
     },
     {
       "nazwa": "Paweł",
       "opinia": "\"Nie mogę przestać podziwiać naszego nowego oczka wodnego! To jest po prostu niesamowite, jak firma potrafiła stworzyć taki piękny element w naszym ogrodzie. Oczko wodne przyniosło nam spokój i relaks, a także stało się głównym punktem naszych spotkań z rodziną i przyjaciółmi. Dziękujemy za profesjonalizm i wspaniałą pracę!\"",
       "usluga": "Oczko wodne z fontanną",
-      "zdjecie": "/images/opinie/pawel.jpg"
+      "zdjecie": "./images/opinie/pawel.jpg"
     },
     {
       "nazwa": "Lucyna i Patryk",
       "opinia": "\"To było najlepsze inwestycja, jaką kiedykolwiek zrobiliśmy! Oczko wodne, które firma zbudowała w naszej przestrzeni, przekracza nasze oczekiwania. Każdy szczegół jest doskonale wykonany, a atmosfera, którą stwarza, jest po prostu magiczna. Nie mogliśmy być bardziej zadowoleni z efektu końcowego. Gorąco polecamy tę firmę wszystkim, którzy szukają niezwykłych oczek wodnych!\"",
       "usluga": "Oczko wodne z fontanną",
-      "zdjecie": "/images/opinie/lucyna_patryk.jpg"
+      "zdjecie": "./images/opinie/lucyna_patryk.jpg"
     },
     {
       "nazwa": "Krzysztof",
       "opinia": "\"Zdecydowanie polecam oczka wodne tej firmy! Zamówiłem jedno do mojego ogrodu i jestem zachwycony efektem. Woda pięknie płynie przez kamienie i tworzy relaksujący dźwięk. To naprawdę dodaje uroku mojemu otoczeniu. Ponadto, firma była bardzo profesjonalna w całym procesie, od projektowania po montaż. Szczerze polecam tą firmę!\"",
       "usluga": "Oczko wodne na poziomie ziemi",
-      "zdjecie": "/images/opinie/krzysztof.jpg"
+      "zdjecie": "./images/opinie/krzysztof.jpg"
     },
     {
       "nazwa": "Irmina",
       "opinia": "\"Mam oczko wodne od tej firmy od kilku miesięcy i jestem naprawdę zachwycona rezultatami. To jest punkt centralny mojego ogrodu i zawsze przyciąga uwagę gości. Efekt spływającej wody jest naprawdę relaksujący i dodaje harmonii mojemu otoczeniu. Firma była bardzo profesjonalna i dobrze zrozumiała moje potrzeby. Montaż był szybki i bezproblemowy\"",
       "usluga": "Oczko wodne z kaskadą",
-      "zdjecie": "/images/opinie/irmina.jpg"
+      "zdjecie": "./images/opinie/irmina.jpg"
     }
   ]
 }
