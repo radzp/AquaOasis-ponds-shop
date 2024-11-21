@@ -25,6 +25,10 @@ AquaOasis is a web-based application designed to showcase and manage water garde
 - **📱 Responsive Design**: The application is fully responsive, ensuring a seamless experience across different devices.
 
 
+## Preview
+![Animation](https://github.com/user-attachments/assets/230a159e-a2db-4662-aa8e-db55b14b9f31)
+
+
 ## 🔧 Getting started
 
 #### 🐳 Docker Container Guide
